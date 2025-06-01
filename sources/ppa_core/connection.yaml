@@ -1,0 +1,10 @@
+# This file was automatically generated
+name: ppa_core
+type: mssql
+options:
+  user: noor.shuhailey
+  authenticationType: default
+  database: PPA_CORE
+  port: 1433
+  server: 10.10.2.74
+  trust_server_certificate: true
