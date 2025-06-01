@@ -1,5 +1,5 @@
 ---
-title: Welcome to Evidence
+title: Agihan - Data Quality Dashboard
 ---
 
 <!-- <Details title='How to edit this page'>
@@ -7,14 +7,58 @@ title: Welcome to Evidence
   This page can be found in your project at `/pages/index.md`. Make a change to the markdown file and save it to see the change take effect in your browser.
 </Details> -->
 
-```sql categories
+```sql kk_total
   select
-      category
-  from needful_things.orders
-  group by category
+      *
+  from sample.kk_total
 ```
 
-<Dropdown data={categories} name=category value=category>
+<Grid cols=5>
+  <BigValue 
+    data={kk_total} 
+    value=total_asnaf
+  />
+  <BigValue 
+    data={kk_total} 
+    value=cleaned_data
+  />
+    <BigValue 
+    data={kk_total} 
+    value=cleaned_data_pct
+    label="Cleaned Data (%)"
+  />
+  <BigValue 
+    data={kk_total} 
+    value=dirty_data
+  />
+  <BigValue 
+    data={kk_total} 
+    value=dirty_data_pct
+  />
+</Grid>
+
+
+```sql kk_metrics
+  select
+      *
+  from sample.kk_metrics
+```
+
+<Grid cols=3>
+
+</Grid>
+
+<!-- 
+```sql asnaf
+  select
+      *
+  from ppa_core.asnaf
+```
+ -->
+
+
+
+<!-- <Dropdown data={categories} name=category value=category>
     <DropdownOption value="%" valueLabel="All Categories"/>
 </Dropdown>
 
@@ -53,4 +97,4 @@ title: Welcome to Evidence
 ## Get Support
 - Message us on [Slack](https://slack.evidence.dev/)
 - Read the [Docs](https://docs.evidence.dev/)
-- Open an issue on [Github](https://github.com/evidence-dev/evidence)
+- Open an issue on [Github](https://github.com/evidence-dev/evidence) -->

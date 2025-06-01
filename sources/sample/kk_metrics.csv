@@ -1,0 +1,17 @@
+Report Type,Field Name,Metric,Total,Valid,Missing,Invalid,Valid %,Missing %,Invalid %
+KK,NRIC,"12 digit
+Numeric
+Type Mykad/Mykid (Regex or ?)","74,946","74,942",0,4,99.995%,0.000%,0.005%
+KK,Jantina,IC last digit odd or even (Regex),"74,946","74,872",0,74,99.901%,0.000%,0.099%
+KK,Poskod,"Numeric
+5 digit postcode format","74,946","74,943",0,3,99.996%,0.000%,0.004%
+KK,Bank,"Combination of MOP, Bank Name, Acc No","74,946","74,661",280,5,99.620%,0.374%,0.007%
+KK,Mobile No.,"Numeric
+Mobile No Format (Regex)","74,946","70,248","3,083","1,615",93.731%,4.114%,2.155%
+KK,Education,"4 < Age < 8
+Schooling = 'Yes'
+Max edu <= edu","74,946",283,75,358,0.378%,0.100%,0.478%
+KK,Daerah,Daerah = Daerah Kariah,"74,946","74,831",115,"74,946",99.847%,0.153%,100.000%
+KK,Umur,"Umur = DOB
+Yr DOB = Yr IC","74,946","74,824",122,"74,946",99.837%,0.163%,100.000%
+KK,Health,Healthy & Not Bedridden,"74,946","74,764",114,68,99.757%,0.152%,0.091%

@@ -1,6 +1,6 @@
 # This file was automatically generated
-name: ppa_core
 type: mssql
+name: ppa_core
 options:
   user: noor.shuhailey
   authenticationType: default
@@ -8,3 +8,6 @@ options:
   port: 1433
   server: 10.10.2.74
   trust_server_certificate: true
+# Advanced Options, you probably don't want to change this
+buildOptions:
+  batchSize: 1000000
