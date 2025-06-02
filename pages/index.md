@@ -1,7 +1,7 @@
 ---
 title: PPA - Data Quality Dashboard (KK)
 ---
-<LastRefreshed/>
+<LastRefreshed prefix="Data last updated"/>
 
 
 ```sql kk_total
