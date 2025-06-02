@@ -98,7 +98,7 @@ Numeric, 12 digits, and must be Mykad or Mykid format.
 
 <Group>  
 <Details title="Gender Valid Criteria" open="true">
-Last digit of IC must be odd or even (gender format).
+`Gender` column is 0 or 1
 </Details>
 <ECharts config={{
   title: {
