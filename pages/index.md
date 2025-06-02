@@ -1,5 +1,5 @@
 ---
-title: Agihan - Data Quality Dashboard
+title: PPA - Data Quality Dashboard
 ---
 
 <!-- <Details title='How to edit this page'>
