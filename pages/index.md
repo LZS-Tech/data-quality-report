@@ -3,6 +3,14 @@ title: PPA - Data Quality Dashboard (KK)
 ---
 <LastRefreshed/>
 
+> The objective of this dashboard is to recreate  <Link 
+    url="https://docs.google.com/document/d/1tJlVIYRTI0wTyuWCU6J9j23EyO7rNSQ4XmaO95kHQMA/edit?usp=sharing"
+    label="this JBI data health dashboard"
+/> that's <Link 
+    url="https://docs.google.com/document/d/1ft5_HxxNEDMxu28PU3FC829K0QZipxed9P-MuO3Blp0/edit?usp=sharing"
+    label="queried from CRM"
+/>, with data queried from PPA. 
+
 
 ```sql kk_total
   select
@@ -344,5 +352,10 @@ Person must be healthy and not bedridden.
 
 </Grid>
 
-## Queries
-      <BigLink url='https://www.notion.so/SQL-DQ-Agihan-KK-JBI-Criteria-2042b8e44fc680cebccadb18e0c9f688'>SQL DQ Agihan KK - JBI Criteria</BigLink> 
+## References
+      <BigLink url='https://www.notion.so/SQL-DQ-Agihan-KK-JBI-Criteria-2042b8e44fc680cebccadb18e0c9f688'>PPA SQL Queries that powers this dashboard</BigLink> 
+
+      <BigLink url='https://docs.google.com/document/d/1ft5_HxxNEDMxu28PU3FC829K0QZipxed9P-MuO3Blp0/edit?usp=sharing'>The original CRM SQL Queries that's based on JBI's Data Health Criterias</BigLink> 
+
+
+      <BigLink url='https://docs.google.com/document/d/1tJlVIYRTI0wTyuWCU6J9j23EyO7rNSQ4XmaO95kHQMA/edit?usp=sharing'>Original JBI Data Health Dashboard</BigLink> 
