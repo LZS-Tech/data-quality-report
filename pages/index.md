@@ -10,6 +10,7 @@ title: PPA - Data Quality Dashboard (KK)
   from sample.kk_total
 ```
 
+## Summary
 <Grid cols=5>
   <BigValue 
     data={kk_total} 
@@ -41,7 +42,7 @@ title: PPA - Data Quality Dashboard (KK)
   from sample.kk_metrics
 ```
 
-## Summary
+
 <DataTable data={kk_metrics}>     
   <Column id="Field Name"/> 
   <Column id="Total"/> 
