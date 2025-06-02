@@ -1,17 +1,17 @@
 Report Type,Field Name,Metric,Total,Valid,Missing,Invalid,Valid %,Missing %,Invalid %
 KK,NRIC,"12 digit
 Numeric
-Type Mykad/Mykid (Regex or ?)","74,946","74,942",0,4,99.995%,0.000%,0.005%
-KK,Jantina,IC last digit odd or even (Regex),"74,946","74,872",0,74,99.901%,0.000%,0.099%
+Type Mykad/Mykid (Regex or ?)",448005,441844,145,6016,0.9862479213,0.000323657102,0.01342842156
+KK,Jantina,IC last digit odd or even (Regex),448005,448002,3,0,0.9999933036,0.000006696353835,0
 KK,Poskod,"Numeric
-5 digit postcode format","74,946","74,943",0,3,99.996%,0.000%,0.004%
-KK,Bank,"Combination of MOP, Bank Name, Acc No","74,946","74,661",280,5,99.620%,0.374%,0.007%
+5 digit postcode format",448005,441623,547,5835,0.9857546233,0.001220968516,0.01302440821
+KK,Bank,"Combination of MOP, Bank Name, Acc No",448005,312470,116680,18855,0.6974698943,0.2604435218,0.04208658386
 KK,Mobile No.,"Numeric
-Mobile No Format (Regex)","74,946","70,248","3,083","1,615",93.731%,4.114%,2.155%
+Mobile No Format (Regex)",448005,361976,81264,4765,0.8079731253,0.1813908327,0.01063604201
 KK,Education,"4 < Age < 8
 Schooling = 'Yes'
-Max edu <= edu","74,946",283,75,358,0.378%,0.100%,0.478%
-KK,Daerah,Daerah = Daerah Kariah,"74,946","74,831",115,"74,946",99.847%,0.153%,100.000%
+Max edu <= edu",1668,1571,0,97,0.9418465228,0,0.05815347722
+KK,Daerah,Daerah = Daerah Kariah,448005,447862,0,143,0.9996808071,0,0.0003191928662
 KK,Umur,"Umur = DOB
-Yr DOB = Yr IC","74,946","74,824",122,"74,946",99.837%,0.163%,100.000%
-KK,Health,Healthy & Not Bedridden,"74,946","74,764",114,68,99.757%,0.152%,0.091%
+Yr DOB = Yr IC",448005,438541,131,9337,0.9788752358,0.0002924074508,0.02084128525
+KK,Health,Healthy & Not Bedridden,448005,325477,77727,44801,0.7265030524,0.1734958315,0.1000011161
