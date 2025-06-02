@@ -5,11 +5,13 @@ title: PPA - Data Quality Dashboard (KK)
 
 > The objective of this dashboard is to recreate  <Link 
     url="https://docs.google.com/document/d/1tJlVIYRTI0wTyuWCU6J9j23EyO7rNSQ4XmaO95kHQMA/edit?usp=sharing"
-    label="JBI’s original Data Health Dashboard"
+    label="JBI’s original Data Health Dashboard (KK only)"
 /> originally powered by data <Link 
     url="https://docs.google.com/document/d/1ft5_HxxNEDMxu28PU3FC829K0QZipxed9P-MuO3Blp0/edit?usp=sharing"
     label="queried from CRM"
-/>—by using data directly from PPA.
+/>—by using data directly from PPA. 
+>
+> The SQL queries used for PPA have been carefully adapted from the original CRM-based queries to maintain alignment with JBI’s data health metrics while ensuring consistency across data sources.
 
 
 ```sql kk_total
