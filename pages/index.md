@@ -57,7 +57,14 @@ Numeric, 12 digits, and must be Mykad or Mykid format.
     top: 'middle',
     textStyle: { fontSize: 14, fontWeight: 'bold', color: '#333' }
   },
-  tooltip: { formatter: '{b}: {c} ({d}%)' },
+  tooltip: {
+    formatter: function (params) {
+      const name = params.name;
+      const value = params.value.toLocaleString(); // Adds commas
+      const percent = params.percent.toFixed(2); // Ensures two decimal places
+      return `${name}: ${value} (${percent}%)`;
+    }
+  },
   legend: { top: 'bottom' },
   series: [{
     type: 'pie', radius: ['40%', '70%'],
@@ -82,7 +89,14 @@ Last digit of IC must be odd or even (gender format).
     top: 'middle',
     textStyle: { fontSize: 14, fontWeight: 'bold', color: '#333' }
   },
-  tooltip: { formatter: '{b}: {c} ({d}%)' },
+  tooltip: {
+    formatter: function (params) {
+      const name = params.name;
+      const value = params.value.toLocaleString(); // Adds commas
+      const percent = params.percent.toFixed(2); // Ensures two decimal places
+      return `${name}: ${value} (${percent}%)`;
+    }
+  },
   legend: { top: 'bottom' },
   series: [{
     type: 'pie', radius: ['40%', '70%'],
@@ -107,7 +121,14 @@ Must be numeric and 5-digit postcode format.
     top: 'middle',
     textStyle: { fontSize: 14, fontWeight: 'bold', color: '#333' }
   },
-  tooltip: { formatter: '{b}: {c} ({d}%)' },
+  tooltip: {
+    formatter: function (params) {
+      const name = params.name;
+      const value = params.value.toLocaleString(); // Adds commas
+      const percent = params.percent.toFixed(2); // Ensures two decimal places
+      return `${name}: ${value} (${percent}%)`;
+    }
+  },
   legend: { top: 'bottom' },
   series: [{
     type: 'pie', radius: ['40%', '70%'],
@@ -132,7 +153,14 @@ Must include valid MOP, Bank Name, and Account Number.
     top: 'middle',
     textStyle: { fontSize: 14, fontWeight: 'bold', color: '#333' }
   },
-  tooltip: { formatter: '{b}: {c} ({d}%)' },
+  tooltip: {
+    formatter: function (params) {
+      const name = params.name;
+      const value = params.value.toLocaleString(); // Adds commas
+      const percent = params.percent.toFixed(2); // Ensures two decimal places
+      return `${name}: ${value} (${percent}%)`;
+    }
+  },
   legend: { top: 'bottom' },
   series: [{
     type: 'pie', radius: ['40%', '70%'],
@@ -157,7 +185,14 @@ Must follow numeric mobile phone format.
     top: 'middle',
     textStyle: { fontSize: 14, fontWeight: 'bold', color: '#333' }
   },
-  tooltip: { formatter: '{b}: {c} ({d}%)' },
+  tooltip: {
+    formatter: function (params) {
+      const name = params.name;
+      const value = params.value.toLocaleString(); // Adds commas
+      const percent = params.percent.toFixed(2); // Ensures two decimal places
+      return `${name}: ${value} (${percent}%)`;
+    }
+  },
   legend: { top: 'bottom' },
   series: [{
     type: 'pie', radius: ['40%', '70%'],
@@ -182,7 +217,14 @@ Age between 4–8, schooling = yes, max edu ≤ current edu.
     top: 'middle',
     textStyle: { fontSize: 14, fontWeight: 'bold', color: '#333' }
   },
-  tooltip: { formatter: '{b}: {c} ({d}%)' },
+  tooltip: {
+    formatter: function (params) {
+      const name = params.name;
+      const value = params.value.toLocaleString(); // Adds commas
+      const percent = params.percent.toFixed(2); // Ensures two decimal places
+      return `${name}: ${value} (${percent}%)`;
+    }
+  },
   legend: { top: 'bottom' },
   series: [{
     type: 'pie', radius: ['40%', '70%'],
@@ -207,7 +249,14 @@ Daerah must match Daerah Kariah field.
     top: 'middle',
     textStyle: { fontSize: 14, fontWeight: 'bold', color: '#333' }
   },
-  tooltip: { formatter: '{b}: {c} ({d}%)' },
+  tooltip: {
+    formatter: function (params) {
+      const name = params.name;
+      const value = params.value.toLocaleString(); // Adds commas
+      const percent = params.percent.toFixed(2); // Ensures two decimal places
+      return `${name}: ${value} (${percent}%)`;
+    }
+  },
   legend: { top: 'bottom' },
   series: [{
     type: 'pie', radius: ['40%', '70%'],
@@ -232,7 +281,14 @@ DOB year must match IC year and calculated age must match DOB.
     top: 'middle',
     textStyle: { fontSize: 14, fontWeight: 'bold', color: '#333' }
   },
-  tooltip: { formatter: '{b}: {c} ({d}%)' },
+  tooltip: {
+    formatter: function (params) {
+      const name = params.name;
+      const value = params.value.toLocaleString(); // Adds commas
+      const percent = params.percent.toFixed(2); // Ensures two decimal places
+      return `${name}: ${value} (${percent}%)`;
+    }
+  },
   legend: { top: 'bottom' },
   series: [{
     type: 'pie', radius: ['40%', '70%'],
@@ -257,7 +313,14 @@ Person must be healthy and not bedridden.
     top: 'middle',
     textStyle: { fontSize: 14, fontWeight: 'bold', color: '#333' }
   },
-  tooltip: { formatter: '{b}: {c} ({d}%)' },
+  tooltip: {
+    formatter: function (params) {
+      const name = params.name;
+      const value = params.value.toLocaleString(); // Adds commas
+      const percent = params.percent.toFixed(2); // Ensures two decimal places
+      return `${name}: ${value} (${percent}%)`;
+    }
+  },
   legend: { top: 'bottom' },
   series: [{
     type: 'pie', radius: ['40%', '70%'],
