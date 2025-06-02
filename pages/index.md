@@ -355,9 +355,9 @@ Person must be healthy and not bedridden.
 </Grid>
 
 ## References
-      <BigLink url='https://www.notion.so/SQL-DQ-Agihan-KK-JBI-Criteria-2042b8e44fc680cebccadb18e0c9f688'>SQL scripts that query data from PPA, powering this dashboard — adapted from the original CRM scripts below.</BigLink> 
+      <BigLink url='https://www.notion.so/SQL-DQ-Agihan-KK-JBI-Criteria-2042b8e44fc680cebccadb18e0c9f688'>SQL scripts that query data from PPA — powering this dashboard. Adapted from the original CRM version below.</BigLink> 
 
-      <BigLink url='https://docs.google.com/document/d/1ft5_HxxNEDMxu28PU3FC829K0QZipxed9P-MuO3Blp0/edit?usp=sharing'>Original SQL scripts that extract data health from the CRM system, based on JBI’s data health metrics.</BigLink> 
+      <BigLink url='https://docs.google.com/document/d/1ft5_HxxNEDMxu28PU3FC829K0QZipxed9P-MuO3Blp0/edit?usp=sharing'>Original SQL scripts for extracting data from CRM, based on JBI’s data health metrics.</BigLink> 
 
 
-      <BigLink url='https://docs.google.com/document/d/1tJlVIYRTI0wTyuWCU6J9j23EyO7rNSQ4XmaO95kHQMA/edit?usp=sharing'>Initial reference dashboard used to define and track data health metrics for JBI.</BigLink> 
+      <BigLink url='https://docs.google.com/document/d/1tJlVIYRTI0wTyuWCU6J9j23EyO7rNSQ4XmaO95kHQMA/edit?usp=sharing'>Initial JBI dashboard used to define and monitor data health metrics.</BigLink> 
