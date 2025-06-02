@@ -1,11 +1,8 @@
 ---
 title: PPA - Data Quality Dashboard (KK)
 ---
+<LastRefreshed/>
 
-<!-- <Details title='How to edit this page'>
-
-  This page can be found in your project at `/pages/index.md`. Make a change to the markdown file and save it to see the change take effect in your browser.
-</Details> -->
 
 ```sql kk_total
   select
@@ -44,6 +41,16 @@ title: PPA - Data Quality Dashboard (KK)
   from sample.kk_metrics
 ```
 
+## Summary
+<DataTable data={kk_metrics}>     
+  <Column id="Field Name"/> 
+  <Column id="Total"/> 
+  <Column id="Valid"/> 
+  <Column id="Invalid"/> 
+  <Column id="Missing"/> 
+</DataTable>
+
+## Dashboard
 <Grid cols=2>
 
 <Group>  
