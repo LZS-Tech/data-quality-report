@@ -25,7 +25,7 @@ title: PPA - Data Quality Dashboard (KK)
     <BigValue 
     data={kk_total} 
     value=cleaned_data_pct
-    label="Cleaned Data (%)"
+    title="Cleaned Data (%)"
   />
   <BigValue 
     data={kk_total} 
@@ -34,6 +34,7 @@ title: PPA - Data Quality Dashboard (KK)
   <BigValue 
     data={kk_total} 
     value=dirty_data_pct
+    title="Dirty Data (%)"
   />
 </Grid>
 
