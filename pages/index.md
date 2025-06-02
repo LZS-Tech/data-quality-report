@@ -46,9 +46,9 @@ title: PPA - Data Quality Dashboard (KK)
 <DataTable data={kk_metrics}>     
   <Column id="Field Name"/> 
   <Column id="Total"/> 
-  <Column id="Valid"/> 
-  <Column id="Invalid"/> 
-  <Column id="Missing"/> 
+  <Column id="Valid" contentType=colorscale colorScale=#5C947D/> 
+  <Column id="Invalid" contentType=colorscale colorScale=#DE6B64/> 
+  <Column id="Missing" contentType=colorscale colorScale=#EBA776/> 
 </DataTable>
 
 ## Dashboard
