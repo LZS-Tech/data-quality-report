@@ -343,3 +343,6 @@ Person must be healthy and not bedridden.
 </Group>
 
 </Grid>
+
+## Queries
+      <BigLink url='https://www.notion.so/SQL-DQ-Agihan-KK-JBI-Criteria-2042b8e44fc680cebccadb18e0c9f688'>SQL DQ Agihan KK - JBI Criteria</BigLink> 
