@@ -11,7 +11,7 @@ title: PPA - Data Quality Dashboard (KK)
     label="queried from CRM"
 />—by using data directly from PPA. 
 >
-> The SQL queries used for PPA have been carefully adapted from the original CRM-based queries to maintain alignment with JBI’s data health metrics while ensuring consistency across data sources.
+> The SQL scripts used for PPA in this dashboard were carefully adapted from the original CRM-based scripts to maintain alignment with JBI’s data health metrics, while ensuring consistency and reliability across data sources.
 
 
 ```sql kk_total
