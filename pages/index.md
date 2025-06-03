@@ -258,7 +258,7 @@ Age between 4–8, schooling = yes, max edu ≤ current edu.
 
 <Group>  
 <Details title="District Valid Criteria" open="true">
-Daerah must match Daerah Kariah field.
+Daerah must not be null.
 </Details>
 <ECharts config={{
   title: {
