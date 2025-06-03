@@ -162,7 +162,7 @@ Must be numeric and 5-digit postcode format.
 
 <Group>  
 <Details title="Bank Info Valid Criteria" open="true">
-Must include valid MOP, Bank Name, and Account Number.
+Must include valid Bank Name, and Account Number.
 </Details>
 <ECharts config={{
   title: {
