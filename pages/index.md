@@ -361,3 +361,7 @@ Person must be healthy and not bedridden.
 
 
       <BigLink url='https://docs.google.com/document/d/1tJlVIYRTI0wTyuWCU6J9j23EyO7rNSQ4XmaO95kHQMA/edit?usp=sharing'>Initial JBI dashboard used to define and monitor data health metrics.</BigLink> 
+
+      <BigLink url='https://dbdocs.io/1zaak/ppa_core?table=asnaf&schema=dbo&view=table_structure'>PPA Data Structure & ERD</BigLink> 
+
+      
