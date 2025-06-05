@@ -5,7 +5,7 @@ title: Tanggungan - FMM
 
 > The objective of this dashboard is to recreate  <Link 
     url="https://docs.google.com/document/d/1tJlVIYRTI0wTyuWCU6J9j23EyO7rNSQ4XmaO95kHQMA/edit?usp=sharing"
-    label="JBI’s original Data Health Dashboard (KK only)"
+    label="JBI’s original Data Health Dashboard (Tanggungan)"
 /> originally powered by data <Link 
     url="https://docs.google.com/document/d/1ft5_HxxNEDMxu28PU3FC829K0QZipxed9P-MuO3Blp0/edit?usp=sharing"
     label="queried from CRM"
@@ -28,7 +28,7 @@ title: Tanggungan - FMM
     data={tanggungan_total} 
     value=total_asnaf
     fmt=num1k
-    title="Total KK FMM"
+    title="Total Tanggungan FMM"
   />
   <BigValue 
     data={tanggungan_total} 
