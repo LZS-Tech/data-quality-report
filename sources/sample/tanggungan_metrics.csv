@@ -1,0 +1,16 @@
+Report Type,Field Name,Metric,Total,Valid,Missing,Invalid,Valid %,Missing %,Invalid %
+NFM Tanggungan,NRIC,"12 digit
+Numeric
+Type Mykad/Mykid (Regex or ?)",131472,127645,1006,2821,0.9708911403,0.007651819399,0.02145704028
+NFM Tanggungan,Jantina,IC last digit odd or even (Regex),131472,131457,15,0,0.9998859073,0.0001140927346,0
+NFM Tanggungan,Poskod,"Numeric
+5 digit postcode format",131472,131329,129,100,0.9989123159,0.0009811975173,0.0007606182305
+NFM Tanggungan,Mobile No.,"Numeric
+Mobile No Format (Regex)",131472,15258,109863,6351,0.1160551296,0.8356380066,0.04830686382
+NFM Tanggungan,Education,"4 < Age < 8
+Schooling = 'Yes'
+Max edu <= edu",29891,29608,0,283,0.9905322672,0,0.009467732762
+NFM Tanggungan,Daerah,Daerah = Daerah Kariah,131472,131368,0,104,0.999208957,0,0.0007910429597
+NFM Tanggungan,Umur,"Umur = DOB
+Yr DOB = Yr IC",131472,124921,470,6107,0.9501718997,0.003574905683,0.04645095534
+NFM Tanggungan,Health,Healthy & Not Bedridden,131472,117127,6318,8027,0.8908893148,0.0480558598,0.06105482536

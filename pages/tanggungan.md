@@ -17,45 +17,45 @@ title: KK - FMM
 
 ## Summary
 
-```sql kk_total
+```sql tanggungan_total
   select
       *
-  from sample.kk_total
+  from sample.tanggungan_total
 ```
 
 <Grid cols=5>
   <BigValue 
-    data={kk_total} 
+    data={tanggungan_total} 
     value=total_asnaf
     fmt=num1k
     title="Total KK FMM"
   />
   <BigValue 
-    data={kk_total} 
+    data={tanggungan_total} 
     value=cleaned_data
     fmt=num1k
   />
     <BigValue 
-    data={kk_total} 
+    data={tanggungan_total} 
     value=cleaned_data_pct
     title="Cleaned Data (%)"
   />
   <BigValue 
-    data={kk_total} 
+    data={tanggungan_total} 
     value=dirty_data
     fmt=num1k
   />
   <BigValue 
-    data={kk_total} 
+    data={tanggungan_total} 
     value=dirty_data_pct
     title="Dirty Data (%)"
   />
 </Grid>
 
-```sql kk_metrics
+```sql tanggungan_metrics
   select
       *
-  from sample.kk_metrics
+  from sample.tanggungan_metrics
 ```
 
 ```sql pie_data
@@ -63,22 +63,22 @@ select
   "Field Name" as field,
   'Valid' as name,
   Valid as value
-from kk_metrics
+from tanggungan_metrics
 union all
 select 
   "Field Name",
   'Missing',
   Missing
-from kk_metrics
+from tanggungan_metrics
 union all
 select 
   "Field Name",
   'Invalid',
   Invalid
-from kk_metrics
+from tanggungan_metrics
 ```
 
-<DataTable data={kk_metrics}>     
+<DataTable data={tanggungan_metrics}>     
   <Column id="Field Name"/> 
   <Column id="Total"/> 
   <Column id="Valid" contentType=colorscale colorScale=#5C947D/> 
@@ -115,9 +115,9 @@ Numeric, 12 digits, and must be Mykad or Mykid format.
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 79650, name: 'Valid', itemStyle: { color: '#5C947D' }},
-      { value: 37, name: 'Missing', itemStyle: { color: '#EBA776' }},
-      { value: 248, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
+      { value: 127645, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 1006, name: 'Missing', itemStyle: { color: '#EBA776' }},
+      { value: 2821, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
   }]
 }} />
@@ -147,8 +147,8 @@ Gender column is 0 or 1
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 79932, name: 'Valid', itemStyle: { color: '#5C947D' }},
-      { value: 3, name: 'Missing', itemStyle: { color: '#EBA776' }},
+      { value: 131457, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 15, name: 'Missing', itemStyle: { color: '#EBA776' }},
       { value: 0, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
   }]
@@ -179,41 +179,9 @@ Must be numeric and 5-digit postcode format.
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 79928, name: 'Valid', itemStyle: { color: '#5C947D' }},
-      { value: 4, name: 'Missing', itemStyle: { color: '#EBA776' }},
-      { value: 13, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
-    ]
-  }]
-}} />
-</Group>
-
-<Group>  
-<Details title="Bank Info Valid Criteria" open="true">
-Must include valid MOP, Bank Name, and Account Number.
-</Details>
-<ECharts config={{
-  title: {
-    text: 'Bank Info',
-    left: 'center',
-    top: 'middle',
-    textStyle: { fontSize: 14, fontWeight: 'bold', color: '#333' }
-  },
-  tooltip: {
-    formatter: function (params) {
-      const name = params.name;
-      const value = params.value.toLocaleString(); // Adds commas
-      const percent = params.percent.toFixed(2); // Ensures two decimal places
-      return `${name}: ${value} (${percent}%)`;
-    }
-  },
-  legend: { top: 'bottom' },
-  series: [{
-    type: 'pie', radius: ['40%', '70%'],
-    label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
-    data: [
-      { value: 76052, name: 'Valid', itemStyle: { color: '#5C947D' }},
-      { value: 0, name: 'Missing', itemStyle: { color: '#EBA776' }},
-      { value: 1870, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
+      { value: 131329, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 129, name: 'Missing', itemStyle: { color: '#EBA776' }},
+      { value: 100, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
   }]
 }} />
@@ -243,9 +211,9 @@ Must follow numeric mobile phone format.
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 75907, name: 'Valid', itemStyle: { color: '#5C947D' }},
-      { value: 3537, name: 'Missing', itemStyle: { color: '#EBA776' }},
-      { value: 491, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
+      { value: 15258, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 109863, name: 'Missing', itemStyle: { color: '#EBA776' }},
+      { value: 6351, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
   }]
 }} />
@@ -275,9 +243,9 @@ Age between 4–8, schooling = yes, max edu ≤ current edu.
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 281, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 29608, name: 'Valid', itemStyle: { color: '#5C947D' }},
       { value: 0, name: 'Missing', itemStyle: { color: '#EBA776' }},
-      { value: 6, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
+      { value: 283, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
   }]
 }} />
@@ -307,9 +275,9 @@ Daerah must not be null.
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 79932, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 131368, name: 'Valid', itemStyle: { color: '#5C947D' }},
       { value: 0, name: 'Missing', itemStyle: { color: '#EBA776' }},
-      { value: 3, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
+      { value: 104, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
   }]
 }} />
@@ -339,9 +307,9 @@ DOB year must match IC year and calculated age must match DOB.
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 78909, name: 'Valid', itemStyle: { color: '#5C947D' }},
-      { value: 37, name: 'Missing', itemStyle: { color: '#EBA776' }},
-      { value: 990, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
+      { value: 124921, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 470, name: 'Missing', itemStyle: { color: '#EBA776' }},
+      { value: 6107, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
   }]
 }} />
@@ -371,9 +339,9 @@ Person must be healthy and not bedridden.
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 62234, name: 'Valid', itemStyle: { color: '#5C947D' }},
-      { value: 104, name: 'Missing', itemStyle: { color: '#EBA776' }},
-      { value: 17597, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
+      { value: 117127, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 6318, name: 'Missing', itemStyle: { color: '#EBA776' }},
+      { value: 8027, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
   }]
 }} />
