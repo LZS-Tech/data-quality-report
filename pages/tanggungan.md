@@ -362,7 +362,7 @@ Person must be healthy and not bedridden.
 
 ---
 ## Changelog
-### June 5
-- Filter KK by FMM only. Reduced Asnaf from 448k to 79.9k.
+### June 4
+- Created dashboard Tanggungan by FMM. 
 
       
