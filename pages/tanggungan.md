@@ -363,6 +363,6 @@ Person must be healthy and not bedridden.
 ---
 ## Changelog
 ### June 4
-- Created dashboard Tanggungan by FMM. 
+- Tanggungan report created.
 
       
