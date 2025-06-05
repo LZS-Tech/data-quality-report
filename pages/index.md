@@ -394,7 +394,7 @@ Person must be healthy and not bedridden.
 
 ---
 ## Changelog
-### June 4
+### June 3
 - KK report created.
 ### June 5
 - KK report updated - filter KK by FMM only. Reduced Asnaf from 448k to 79.9k.
