@@ -28,7 +28,7 @@ title: Tanggungan - FMM
     data={tanggungan_total} 
     value=total_asnaf
     fmt=num1k
-    title="Total Tanggungan FMM"
+    title="Total Tanggungan"
   />
   <BigValue 
     data={tanggungan_total} 
