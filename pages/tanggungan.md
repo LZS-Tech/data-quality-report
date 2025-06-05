@@ -351,7 +351,7 @@ Person must be healthy and not bedridden.
 
 ---
 ## References
-      <BigLink url='https://www.notion.so/SQL-DQ-Agihan-KK-Fakir-Miskin-Muallaf-JBI-Criteria-2092b8e44fc68047bca6d171b16da761?source=copy_link'>SQL scripts that query data from PPA — powering this dashboard. Adapted from the original CRM version below.</BigLink> 
+      <BigLink url='https://www.notion.so/SQL-DQ-Agihan-NFM-Tanggungan-JBI-Criteria-2082b8e44fc6801dbc3cc67f98ca9d1b?source=copy_link'>SQL scripts that query data from PPA — powering this dashboard. Adapted from the original CRM version below.</BigLink> 
 
       <BigLink url='https://docs.google.com/document/d/1ft5_HxxNEDMxu28PU3FC829K0QZipxed9P-MuO3Blp0/edit?usp=sharing'>Original SQL scripts for extracting data from CRM, based on JBI’s data health metrics.</BigLink> 
 
