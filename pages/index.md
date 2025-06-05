@@ -1,5 +1,5 @@
 ---
-title: PPA - Data Quality Dashboard (KK)
+title: PPA - Data Quality Dashboard (KK FMM)
 ---
 <LastRefreshed/>
 
@@ -13,6 +13,9 @@ title: PPA - Data Quality Dashboard (KK)
 >
 > The SQL scripts used for PPA in this dashboard were carefully adapted from the original CRM-based scripts to maintain alignment with JBI’s data health metrics, while ensuring consistency and reliability across data sources.
 
+---
+
+## Summary
 
 ```sql kk_total
   select
@@ -20,15 +23,17 @@ title: PPA - Data Quality Dashboard (KK)
   from sample.kk_total
 ```
 
-## Summary
 <Grid cols=5>
   <BigValue 
     data={kk_total} 
     value=total_asnaf
+    fmt=num1k
+    title="Total KK FMM"
   />
   <BigValue 
     data={kk_total} 
     value=cleaned_data
+    fmt=num1k
   />
     <BigValue 
     data={kk_total} 
@@ -38,6 +43,7 @@ title: PPA - Data Quality Dashboard (KK)
   <BigValue 
     data={kk_total} 
     value=dirty_data
+    fmt=num1k
   />
   <BigValue 
     data={kk_total} 
@@ -52,6 +58,25 @@ title: PPA - Data Quality Dashboard (KK)
   from sample.kk_metrics
 ```
 
+```sql pie_data
+select 
+  "Field Name" as field,
+  'Valid' as name,
+  Valid as value
+from kk_metrics
+union all
+select 
+  "Field Name",
+  'Missing',
+  Missing
+from kk_metrics
+union all
+select 
+  "Field Name",
+  'Invalid',
+  Invalid
+from kk_metrics
+```
 
 <DataTable data={kk_metrics}>     
   <Column id="Field Name"/> 
@@ -60,6 +85,8 @@ title: PPA - Data Quality Dashboard (KK)
   <Column id="Invalid" contentType=colorscale colorScale=#DE6B64/> 
   <Column id="Missing" contentType=colorscale colorScale=#EBA776/> 
 </DataTable>
+
+---
 
 ## Dashboard
 <Grid cols=2>
@@ -88,9 +115,9 @@ Numeric, 12 digits, and must be Mykad or Mykid format.
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 441844, name: 'Valid', itemStyle: { color: '#5C947D' }},
-      { value: 145, name: 'Missing', itemStyle: { color: '#EBA776' }},
-      { value: 6016, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
+      { value: 79650, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 37, name: 'Missing', itemStyle: { color: '#EBA776' }},
+      { value: 248, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
   }]
 }} />
@@ -98,7 +125,7 @@ Numeric, 12 digits, and must be Mykad or Mykid format.
 
 <Group>  
 <Details title="Gender Valid Criteria" open="true">
-`Gender` column is 0 or 1
+Gender column is 0 or 1
 </Details>
 <ECharts config={{
   title: {
@@ -120,7 +147,7 @@ Numeric, 12 digits, and must be Mykad or Mykid format.
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 448002, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 79932, name: 'Valid', itemStyle: { color: '#5C947D' }},
       { value: 3, name: 'Missing', itemStyle: { color: '#EBA776' }},
       { value: 0, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
@@ -152,9 +179,9 @@ Must be numeric and 5-digit postcode format.
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 441623, name: 'Valid', itemStyle: { color: '#5C947D' }},
-      { value: 547, name: 'Missing', itemStyle: { color: '#EBA776' }},
-      { value: 5835, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
+      { value: 79928, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 4, name: 'Missing', itemStyle: { color: '#EBA776' }},
+      { value: 13, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
   }]
 }} />
@@ -184,9 +211,9 @@ Must include valid Bank Name, and Account Number.
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 312470, name: 'Valid', itemStyle: { color: '#5C947D' }},
-      { value: 116680, name: 'Missing', itemStyle: { color: '#EBA776' }},
-      { value: 18855, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
+      { value: 76052, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 0, name: 'Missing', itemStyle: { color: '#EBA776' }},
+      { value: 1870, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
   }]
 }} />
@@ -216,9 +243,9 @@ Must follow numeric mobile phone format.
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 361976, name: 'Valid', itemStyle: { color: '#5C947D' }},
-      { value: 81264, name: 'Missing', itemStyle: { color: '#EBA776' }},
-      { value: 4765, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
+      { value: 75907, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 3537, name: 'Missing', itemStyle: { color: '#EBA776' }},
+      { value: 491, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
   }]
 }} />
@@ -248,9 +275,9 @@ Age between 4–8, schooling = yes, max edu ≤ current edu.
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 1571, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 281, name: 'Valid', itemStyle: { color: '#5C947D' }},
       { value: 0, name: 'Missing', itemStyle: { color: '#EBA776' }},
-      { value: 97, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
+      { value: 6, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
   }]
 }} />
@@ -280,9 +307,9 @@ Daerah must not be null.
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 447862, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 79932, name: 'Valid', itemStyle: { color: '#5C947D' }},
       { value: 0, name: 'Missing', itemStyle: { color: '#EBA776' }},
-      { value: 143, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
+      { value: 3, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
   }]
 }} />
@@ -312,9 +339,9 @@ DOB year must match IC year and calculated age must match DOB.
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 438541, name: 'Valid', itemStyle: { color: '#5C947D' }},
-      { value: 131, name: 'Missing', itemStyle: { color: '#EBA776' }},
-      { value: 9337, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
+      { value: 78909, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 37, name: 'Missing', itemStyle: { color: '#EBA776' }},
+      { value: 990, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
   }]
 }} />
@@ -344,9 +371,9 @@ Person must be healthy and not bedridden.
     type: 'pie', radius: ['40%', '70%'],
     label: { show: true, position: 'outside', formatter: '{b}\n{d}%' },
     data: [
-      { value: 325477, name: 'Valid', itemStyle: { color: '#5C947D' }},
-      { value: 77727, name: 'Missing', itemStyle: { color: '#EBA776' }},
-      { value: 44801, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
+      { value: 62234, name: 'Valid', itemStyle: { color: '#5C947D' }},
+      { value: 104, name: 'Missing', itemStyle: { color: '#EBA776' }},
+      { value: 17597, name: 'Invalid', itemStyle: { color: '#DE6B64' }}
     ]
   }]
 }} />
@@ -354,8 +381,9 @@ Person must be healthy and not bedridden.
 
 </Grid>
 
+---
 ## References
-      <BigLink url='https://www.notion.so/SQL-DQ-Agihan-KK-JBI-Criteria-2042b8e44fc680cebccadb18e0c9f688'>SQL scripts that query data from PPA — powering this dashboard. Adapted from the original CRM version below.</BigLink> 
+      <BigLink url='https://www.notion.so/SQL-DQ-Agihan-KK-Fakir-Miskin-Muallaf-JBI-Criteria-2092b8e44fc68047bca6d171b16da761?source=copy_link'>SQL scripts that query data from PPA — powering this dashboard. Adapted from the original CRM version below.</BigLink> 
 
       <BigLink url='https://docs.google.com/document/d/1ft5_HxxNEDMxu28PU3FC829K0QZipxed9P-MuO3Blp0/edit?usp=sharing'>Original SQL scripts for extracting data from CRM, based on JBI’s data health metrics.</BigLink> 
 
@@ -363,5 +391,10 @@ Person must be healthy and not bedridden.
       <BigLink url='https://docs.google.com/document/d/1tJlVIYRTI0wTyuWCU6J9j23EyO7rNSQ4XmaO95kHQMA/edit?usp=sharing'>Initial JBI dashboard used to define and monitor data health metrics.</BigLink> 
 
       <BigLink url='https://dbdocs.io/1zaak/ppa_core?table=asnaf&schema=dbo&view=table_structure'>PPA Data Structure & ERD</BigLink> 
+
+---
+## Changelog
+### June 5
+- Filter KK by FMM only. Reduced Asnaf from 448k to 79.9k.
 
       
