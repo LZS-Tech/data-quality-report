@@ -8,3 +8,4 @@
 <EvidenceDefaultLayout {data} title="Data Quality" homePageName="KK - FMM" logo="lzs-logo.png" builtWithEvidence=false hideBreadcrumbs=true>
 	<slot slot="content" />
 </EvidenceDefaultLayout>
+
