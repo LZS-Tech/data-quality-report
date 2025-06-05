@@ -34,11 +34,12 @@ title: Tanggungan - FMM
     data={tanggungan_total} 
     value=cleaned_data
     fmt=num1k
+    title="Clean Data"
   />
     <BigValue 
     data={tanggungan_total} 
     value=cleaned_data_pct
-    title="Cleaned Data (%)"
+    title="Clean Data (%)"
   />
   <BigValue 
     data={tanggungan_total} 

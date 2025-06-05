@@ -33,12 +33,13 @@ title: KK - FMM
   <BigValue 
     data={kk_total} 
     value=cleaned_data
+    title="Clean Data"
     fmt=num1k
   />
     <BigValue 
     data={kk_total} 
     value=cleaned_data_pct
-    title="Cleaned Data (%)"
+    title="Clean Data (%)"
   />
   <BigValue 
     data={kk_total} 
